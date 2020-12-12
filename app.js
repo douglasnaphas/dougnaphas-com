@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 
-app.get("/kleenex", () => {
+app.get("/kleenex", (req, res) => {
   return res.redirect(
     301,
     "https://docs.google.com/presentation/d/1KnfT8yb825nH4mXQ7E-iypnjumT6pP7SQ3ix6f-fUE4/edit?usp=sharing"
