@@ -8,6 +8,12 @@ app.get("/kleenex", (req, res) => {
   );
 });
 
+app.get("/not-in-template", (req, res) => {
+  return res.send({
+    Output: "This is not in the template",
+  });
+});
+
 app.get("/", function (req, res) {
   return res.send({
     Output: "This is dougnaphas.com",
